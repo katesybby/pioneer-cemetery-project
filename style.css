@@ -104,17 +104,19 @@ body {
 
   #map-grid {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    /* need to change so letters across and numbers down */
+    grid-template-columns: repeat(lettersCount, 1fr); 
+    grid-template-rows: repeat(numbersCount, 1fr);
     gap: 4px;
     margin: 20px auto;
-    max-width: 800px;
+    max-width: 1000px;
   }
   
   .map-cell {
     background: #d8e3d8;
     border: 1px solid #ccc;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
     cursor: pointer;
     font-size: 0.9rem;
     border-radius: 4px;
